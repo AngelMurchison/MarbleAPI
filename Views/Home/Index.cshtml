@@ -1,0 +1,24 @@
+﻿@{var labeltext = MarbleAPI.Controllers.MarbleController.bagOfMarbles.Last().Id + 1;} 
+<div class="jumbotron">
+    <div class="row">
+        <button id="Action2" class="btn btn-danger">Get random marble</button>
+        <br />
+        <div>
+            <div id="randomMarble">
+            </div>
+        </div>
+        <br />
+        <label>Id: </label>
+        <label id="newId">@labeltext</label>
+        <input id="marbleColor" type="text" />
+        <button id="Action1" class="btn btn-danger">Add a marble</button>
+        <br />
+        <br />
+    </div>
+    <button id="Action0" class="btn btn-danger">Get all marbles</button>
+    <br />
+    <div>
+        <div id="Marbles">
+        </div>
+    </div>
+</div>
